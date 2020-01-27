@@ -1,0 +1,9 @@
+<launch>
+    
+    <rosparam command="load" param="color_list" file="$(find test_package)/config/color.yaml"/>
+
+    <node name= "$(anon publisher)" pkg="test_package" type="publisher.py" output="screen"/>
+    <node name= "$(anon listener)" pkg="test_package" type="listener.py" output="screen"/>
+    <node name= "$(anon add_two_ints_server)" pkg="test_package" type="server.py" output="screen"/>
+    <!--node name= "$(anon add_two_ints)" pkg="test_package" type="client.py" output="screen"/-->
+</launch>

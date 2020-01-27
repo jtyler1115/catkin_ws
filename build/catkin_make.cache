@@ -1,0 +1,2 @@
+aruco_ros/aruco:aruco_ros/aruco_msgs:aruco_ros/aruco_ros:frontier_exploration/exploration:frontier_exploration/exploration_msgs:frontier_exploration/exploration_server:frontier_exploration/frontier_exploration:frontier_exploration/polygon_layer:lab1:rosbot_description/src/rosbot_description:rosbot_description/src/rosbot_gazebo:rosbot_description/src/rosbot_navigation:slamproject:test_package:traj_tracker:tutorial_pkg:zbar_ros
+-DCATKIN_DEVEL_PREFIX=/home/jtyler/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/jtyler/catkin_ws/install -G Unix Makefiles

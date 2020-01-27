@@ -1,0 +1,8 @@
+prefix=/home/jtyler/catkin_ws/devel
+
+Name: slamproject
+Description: Description of slamproject
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

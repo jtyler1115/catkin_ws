@@ -1,0 +1,7 @@
+<launch>
+    
+    <rosparam command="load" param="trajectory_description" file="$(find traj_tracker)/config/traj_1.yaml"/>
+
+    <node name= "$(anon tracker)" pkg="traj_tracker" type="tracker.py" output="screen"/>
+    <node name= "turtlesim_node" pkg="turtlesim" type="turtlesim_node" output="screen"/>
+</launch>
