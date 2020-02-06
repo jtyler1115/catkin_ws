@@ -1195,6 +1195,162 @@ lab1_gencpp/fast:
 .PHONY : lab1_gencpp/fast
 
 #=============================================================================
+# Target rules for targets named lab2_genpy
+
+# Build rule for target.
+lab2_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_genpy
+.PHONY : lab2_genpy
+
+# fast build rule for target.
+lab2_genpy/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_genpy.dir/build.make lab2/CMakeFiles/lab2_genpy.dir/build
+.PHONY : lab2_genpy/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages_eus
+
+# Build rule for target.
+lab2_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages_eus
+.PHONY : lab2_generate_messages_eus
+
+# fast build rule for target.
+lab2_generate_messages_eus/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages_eus.dir/build.make lab2/CMakeFiles/lab2_generate_messages_eus.dir/build
+.PHONY : lab2_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named _lab2_generate_messages_check_deps_Gps_data
+
+# Build rule for target.
+_lab2_generate_messages_check_deps_Gps_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _lab2_generate_messages_check_deps_Gps_data
+.PHONY : _lab2_generate_messages_check_deps_Gps_data
+
+# fast build rule for target.
+_lab2_generate_messages_check_deps_Gps_data/fast:
+	$(MAKE) -f lab2/CMakeFiles/_lab2_generate_messages_check_deps_Gps_data.dir/build.make lab2/CMakeFiles/_lab2_generate_messages_check_deps_Gps_data.dir/build
+.PHONY : _lab2_generate_messages_check_deps_Gps_data/fast
+
+#=============================================================================
+# Target rules for targets named lab2_gencpp
+
+# Build rule for target.
+lab2_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_gencpp
+.PHONY : lab2_gencpp
+
+# fast build rule for target.
+lab2_gencpp/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_gencpp.dir/build.make lab2/CMakeFiles/lab2_gencpp.dir/build
+.PHONY : lab2_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages_cpp
+
+# Build rule for target.
+lab2_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages_cpp
+.PHONY : lab2_generate_messages_cpp
+
+# fast build rule for target.
+lab2_generate_messages_cpp/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages_cpp.dir/build.make lab2/CMakeFiles/lab2_generate_messages_cpp.dir/build
+.PHONY : lab2_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages
+
+# Build rule for target.
+lab2_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages
+.PHONY : lab2_generate_messages
+
+# fast build rule for target.
+lab2_generate_messages/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages.dir/build.make lab2/CMakeFiles/lab2_generate_messages.dir/build
+.PHONY : lab2_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named lab2_geneus
+
+# Build rule for target.
+lab2_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_geneus
+.PHONY : lab2_geneus
+
+# fast build rule for target.
+lab2_geneus/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_geneus.dir/build.make lab2/CMakeFiles/lab2_geneus.dir/build
+.PHONY : lab2_geneus/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages_py
+
+# Build rule for target.
+lab2_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages_py
+.PHONY : lab2_generate_messages_py
+
+# fast build rule for target.
+lab2_generate_messages_py/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages_py.dir/build.make lab2/CMakeFiles/lab2_generate_messages_py.dir/build
+.PHONY : lab2_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named lab2_gennodejs
+
+# Build rule for target.
+lab2_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_gennodejs
+.PHONY : lab2_gennodejs
+
+# fast build rule for target.
+lab2_gennodejs/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_gennodejs.dir/build.make lab2/CMakeFiles/lab2_gennodejs.dir/build
+.PHONY : lab2_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages_lisp
+
+# Build rule for target.
+lab2_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages_lisp
+.PHONY : lab2_generate_messages_lisp
+
+# fast build rule for target.
+lab2_generate_messages_lisp/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages_lisp.dir/build.make lab2/CMakeFiles/lab2_generate_messages_lisp.dir/build
+.PHONY : lab2_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named lab2_genlisp
+
+# Build rule for target.
+lab2_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_genlisp
+.PHONY : lab2_genlisp
+
+# fast build rule for target.
+lab2_genlisp/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_genlisp.dir/build.make lab2/CMakeFiles/lab2_genlisp.dir/build
+.PHONY : lab2_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named lab2_generate_messages_nodejs
+
+# Build rule for target.
+lab2_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab2_generate_messages_nodejs
+.PHONY : lab2_generate_messages_nodejs
+
+# fast build rule for target.
+lab2_generate_messages_nodejs/fast:
+	$(MAKE) -f lab2/CMakeFiles/lab2_generate_messages_nodejs.dir/build.make lab2/CMakeFiles/lab2_generate_messages_nodejs.dir/build
+.PHONY : lab2_generate_messages_nodejs/fast
+
+#=============================================================================
 # Target rules for targets named aruco
 
 # Build rule for target.
@@ -3470,6 +3626,18 @@ help:
 	@echo "... lab1_geneus"
 	@echo "... _lab1_generate_messages_check_deps_Gps_data"
 	@echo "... lab1_gencpp"
+	@echo "... lab2_genpy"
+	@echo "... lab2_generate_messages_eus"
+	@echo "... _lab2_generate_messages_check_deps_Gps_data"
+	@echo "... lab2_gencpp"
+	@echo "... lab2_generate_messages_cpp"
+	@echo "... lab2_generate_messages"
+	@echo "... lab2_geneus"
+	@echo "... lab2_generate_messages_py"
+	@echo "... lab2_gennodejs"
+	@echo "... lab2_generate_messages_lisp"
+	@echo "... lab2_genlisp"
+	@echo "... lab2_generate_messages_nodejs"
 	@echo "... aruco"
 	@echo "... optimalmarkers"
 	@echo "... tf_generate_messages_nodejs"

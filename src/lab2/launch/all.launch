@@ -1,0 +1,7 @@
+<launch>
+
+    <node name= "$(anon imu_driver)" pkg="lab2" type="imu_driver.py" output="screen"/>
+    <node name= "$(anon gps_driver)" pkg="lab2" type="gps_driver.py" output="screen"/>
+     <node pkg="rosbag" type="record" name="record" output="screen" args="-o /home/jtyler/bagfiles/lab2 -a"/>
+    <!--node name= "$(anon add_two_ints)" pkg="test_package" type="client.py" output="screen"/-->
+</launch>

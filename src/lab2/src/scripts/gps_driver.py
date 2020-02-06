@@ -31,6 +31,7 @@ def parseInput(line):
     latitude and longitude
     '''
     dataList=line.split(",")
+    print dataList
     latdeg=float(dataList[2][0:2])
     latmin=float(dataList[2][2:])
     lat = latdeg+(latmin/60)
@@ -50,7 +51,7 @@ def parseInput(line):
 if __name__ == '__main__':
     SENSOR_NAME = "gps"
     rospy.init_node('gps_driver')
-    serial_port = rospy.get_param('~port','/dev/ttyUSB0')
+    serial_port = rospy.get_param('~port','/dev/ttyUSB1')
     serial_baud = rospy.get_param('~baudrate',4800)
     sampling_rate = rospy.get_param('~sampling_rate',5.0)
   
