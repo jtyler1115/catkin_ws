@@ -105,10 +105,14 @@ if __name__ == '__main__':
                 if line.startswith('$VNYMR'): 
                     imu_raw = parseInput(line)
                     if len(imu_raw) == 14:
-                        imu_msg = mag_to_quat(imu_raw)           
-                        imu_pub.publish(imu_msg)
-                        mag_msg = get_mag(imu_raw)           
-                        mag_pub.publish(mag_msg)
+                        try:
+                            flag = 0        
+                            imu_msg = mag_to_quat(imu_raw)           
+                            imu_pub.publish(imu_msg)
+                            mag_msg = get_mag(imu_raw)           
+                            mag_pub.publish(mag_msg)
+                        except:
+                            pass
                     else:
                         rospy.logwarn("Bad Data: Reading next line")
             rospy.sleep(sleep_time)
