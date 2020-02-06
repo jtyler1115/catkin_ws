@@ -7,12 +7,13 @@ import re
 from geometry_msgs.msg import Quaternion
 from geometry_msgs.msg import Vector3
 from sensor_msgs.msg import Imu
+from sensor_msgs.msg import MagneticField
 from tf.transformations import quaternion_from_euler
 
 def mag_to_quat(imu_raw):
     msg_out = Imu()
     msg_out.header.stamp=rospy.Time.now()
-    
+   
     yaw = float(imu_raw[1])
     pitch = float(imu_raw[2])
     roll = float(imu_raw[3])
@@ -45,8 +46,19 @@ def mag_to_quat(imu_raw):
     msg_out.orientation = orientation
     msg_out.angular_velocity = angular_velocity
     msg_out.linear_acceleration = linear_acceleration
-
+    
     return msg_out
+
+def get_mag(imu_raw):
+    mag_out = MagneticField()
+    mag_out.header.stamp=rospy.Time.now()
+    
+    mag=Vector3()
+    mag.x = float(imu_raw[4])
+    mag.y = float(imu_raw[5])
+    mag.z = float(imu_raw[6])
+    mag_out.magnetic_field=mag
+    return mag_out
 
 def parseInput(line):
     '''
@@ -74,6 +86,7 @@ if __name__ == '__main__':
     rospy.sleep(0.2)        
     
     imu_pub = rospy.Publisher(SENSOR_NAME, Imu, queue_size=5)
+    mag_pub = rospy.Publisher("/mag", MagneticField, queue_size=5)
     
     rospy.logdebug("Initialization complete")
     
@@ -92,8 +105,10 @@ if __name__ == '__main__':
                 if line.startswith('$VNYMR'): 
                     imu_raw = parseInput(line)
                     if len(imu_raw) == 14:
-                        data_msg = mag_to_quat(imu_raw)           
-                        imu_pub.publish(data_msg)
+                        imu_msg = mag_to_quat(imu_raw)           
+                        imu_pub.publish(imu_msg)
+                        mag_msg = get_mag(imu_raw)           
+                        mag_pub.publish(mag_msg)
                     else:
                         rospy.logwarn("Bad Data: Reading next line")
             rospy.sleep(sleep_time)
